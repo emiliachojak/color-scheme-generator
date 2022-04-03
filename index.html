@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input type="color" id="color-picker" value="#F55A5A" />
+        <select id="mode-list">
+          <option value="Monochrome">Monochrome</option>
+          <option value="Monochrome-dark">Monochrome-dark</option>
+          <option value="Monochrome-light">Monochrome-light</option>
+          <option value="Analogic">Analogic</option>
+          <option value="Complement">Complement</option>
+          <option value="Analogic-complement">Analogic-complement</option>
+          <option value="Triad">Triad</option>
+        </select>
+        <button type="submit" id="submit-btn">Get color scheme</button>
+      </header>
+      <main>
+        <div class="color-wrapper">
+          <div id="color-box-1"></div>
+          <p id="color-label-1">#F55A5A</p>
+        </div>
+        <div class="color-wrapper">
+          <div id="color-box-2"></div>
+          <p id="color-label-2">#2B283A</p>
+        </div>
+        <div class="color-wrapper">
+          <div id="color-box-3"></div>
+          <p id="color-label-3">#FBF3AB</p>
+        </div>
+        <div class="color-wrapper">
+          <div id="color-box-4"></div>
+          <p id="color-label-4">#AAD1B6</p>
+        </div>
+        <div class="color-wrapper">
+          <div id="color-box-5"></div>
+          <p id="color-label-5">#A626D3</p>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
